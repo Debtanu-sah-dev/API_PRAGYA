@@ -19,9 +19,12 @@ filesINP.addEventListener("change", (e) => {
     }
 });
 
-respondBTN.addEventListener("click", () => {
+respondBTN.addEventListener("click",async () => {
     timeStamp = new Date();
     let interval = setInterval(() => {
         timeLABEL.innerText = (new Date() - timeStamp)/1000 + " seconds";
     })
+    let content = await generateContent(inputINP.value);
+    outputPRE.innerText = content;
+    clearInterval(interval);
 })

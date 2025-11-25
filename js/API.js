@@ -9,6 +9,7 @@ async function generateContent(content){
     }
     let response = await fetch(CLOUD_URI, options);
     console.log(response);
+    return response;
 }
 
 // generateContent("Explain quantum computers");
