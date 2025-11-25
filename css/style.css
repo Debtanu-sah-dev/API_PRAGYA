@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--bs-light);
+    gap: 2vh;
+    padding: 2vh;
+}
+
+pre{
+    flex-basis: 100%;
+    margin: 2vh !important;
+    margin-left: 0 !important;
+    border: 2vh;
+    overflow: auto;
+    border: 2px solid var(--bs-blue);
+    border-radius: 2vh;
+    padding: 2vh;
+}
