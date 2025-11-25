@@ -31,6 +31,7 @@ pre{
     border: 2vh;
     overflow: auto;
     border: 2px solid var(--bs-blue);
+    border-top: 0px;
     border-radius: 2vh;
     padding: 2vh;
 }
