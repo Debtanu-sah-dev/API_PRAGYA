@@ -55,11 +55,11 @@ class Model{
 
         // return an async generator that streams text chunks
         return {
-            stream:this.streamResponse(response)
+            stream:this.streamResponseHandler(response)
         };
     }
 
-    async *streamResponse(response) {
+    async *streamResponseHandler(response) {
         const reader = response.body.getReader();
         const decoder = new TextDecoder();
 
