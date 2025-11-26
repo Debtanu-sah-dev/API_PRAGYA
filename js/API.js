@@ -52,8 +52,7 @@ class Model{
         if (!response.ok) {
             throw new Error("Network error");
         }
-
-        // return an async generator that streams text chunks
+        
         return {
             stream:this.streamResponseHandler(response)
         };
